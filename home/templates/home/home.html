@@ -1,0 +1,28 @@
+{% extends 'global/base.html' %}
+{% load static %}
+
+{% block extra_head %}
+<link rel='stylesheet' href="{% static 'home/css/home.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+<main class="main container">
+    <div class="container-saldo">
+        <div class="box-saldo">
+            <span class="con">R$</span>
+            <span class="valor">415, 00</span><br>
+            <span class="chave-pix">Chave pix: as$idmiasdmis</span>
+        </div>
+    </div>
+    <nav class="container-nav">
+            <ul class="nav-list">
+                <li><a href="http://a">PIX</a></li>
+                <li><a href="http://a">EXTRATO</a></li>
+            </ul>
+        
+    </nav>
+</main>
+
+{% endblock %}

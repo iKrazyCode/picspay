@@ -1,0 +1,33 @@
+
+.navbar {
+    display: block;
+    padding: 1rem 2rem;
+}
+
+.navbar ul {
+    display: flex;
+    text-decoration: none;
+    gap: 2rem;
+    
+}
+
+.navbar-space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar-username {
+    background-color: brown;
+    padding: 2px 1.4rem;
+}
+
+
+
+
+
+

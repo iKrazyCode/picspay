@@ -1,0 +1,25 @@
+{% extends 'global/base.html' %}
+{% load static %}
+
+{% block extra_head %}
+<link rel='stylesheet' href="{% static 'accounts/css/login.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<main class="main">
+<form class="form">
+  <span class="input-span">
+    <label for="username" class="label">Nome de Usuário</label>
+    <input type="username" name="username" id="email"
+  /></span>
+  <span class="input-span">
+    <label for="password" class="label">Senha</label>
+    <input type="password" name="password" id="password"
+  /></span>
+  <span class="span"><a href="#">Esqueceu a senha ?</a></span>
+  <input class="submit" type="submit" value="Log in" />
+  <span class="span">Não tem conta ? <a href="#">Cadastrar</a></span>
+</form>
+</main>
+{% endblock %}
