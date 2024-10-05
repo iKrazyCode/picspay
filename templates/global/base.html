@@ -11,6 +11,7 @@
     {% block extra_head %}{% endblock %}
 </head>
 <body>
+
     <nav class="navbar">
         <ul class="navbar-space">
             <ul>
@@ -20,7 +21,7 @@
             
             <ul>
                 <li class='navbar-username'><a href="">Pedro</a></li>    
-                <li><a href="#">Logout</a></li>
+                <li><a href="{% url 'accounts:logout' %}">Logout</a></li>
             </ul>
 
 
