@@ -1,0 +1,27 @@
+{% extends 'global/base.html' %}
+{% load static %}
+
+{% block extra_head %}
+<link rel='stylesheet' href="{% static 'accounts/css/login.css' %}">
+{% endblock %}
+
+{% block content %}
+<h1 class='title'>Cadastrar</h1>
+
+<main class="main">
+<form class="form" method="post" action="{% url 'accounts:register' %}">
+    {% csrf_token %}
+  <span class="input-span">
+    <label for="username" class="label">Nome de Usuário</label>
+    <input type="username" name="username" id="email"
+  /></span>
+  <span class="input-span">
+    <label for="password" class="label">Senha</label>
+    <input type="password" name="password" id="password"
+  /></span>
+
+  <input class="submit" type="submit" value="Cadastrar" />
+  <span class="span">Já tem conta ? <a href="{% url 'accounts:login' %}">Login</a></span>
+</form>
+</main>
+{% endblock %}

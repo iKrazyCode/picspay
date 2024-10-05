@@ -6,8 +6,10 @@
 {% endblock %}
 
 {% block content %}
+<h1 class='title'>Login</h1>
 
 <main class="main">
+
 <form class="form" method="post" action="{% url 'accounts:login' %}">
     {% csrf_token %}
   <span class="input-span">
@@ -20,7 +22,7 @@
   /></span>
   <span class="span"><a href="#">Esqueceu a senha ?</a></span>
   <input class="submit" type="submit" value="Log in" />
-  <span class="span">Não tem conta ? <a href="#">Cadastrar</a></span>
+  <span class="span">Não tem conta ? <a href="{% url 'accounts:register' %}">Cadastrar</a></span>
 </form>
 </main>
 {% endblock %}
